@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="javascript.js" defer></script>
+  <title>Login and Registration</title>
+</head>
+<body>
+
+  <div class="container">
+    <div id="LoginAndRegisterForm">
+      <h1 id="formTitle">Login</h1>
+      <div id="formSwitchBtn">
+        <button onclick="ShowLoginForm();" id="ShowLoginBtn" class="active">Login</button>
+        <button onclick="ShowRegistrationForm();" id="ShowRegistrationBtn" >Registration</button>
+      </div>
+      <div id="LoginForm">
+        <form action="#">
+          <div class="center">
+            <input id="LoginEmail" class="input-text" type="text" placeholder="Email Address">
+            <input id="LoginPassword" class="mt-10 input-text" type="password" placeholder="password">
+          </div>
+          <div class="forget-pass-remember-me mt-10">
+            <div class="forget-pass">
+              <a id="ForgetPassword" onclick="ShowForgetPasswordForm();" href="javascript:void(0);" >ForgetPassword?</a>
+            </div>
+          </div>
+          <div class="center mt-20">
+            <input class="Submit-Btn" type="submit" value="Login" id="LoginBtn">
+          </div>
+        </form>
+        <p class="center mt-20 don't-have-account">Don't have an account?
+          <a href="javascript:void(0);" onclick="ShowRegistrationForm();"  >Sign up</a>
+        </p>
+      </div>
+      <div id="RegistrationForm">
+        <form action="#">
+          <div class="center">
+            <input id="RegiName" class="input-text" type="text" placeholder="Full Name">
+            <input id="RegiEmailAddress" class="input-text mt-10" type="email" placeholder="Email Address">
+            <input id="RegiPassword" class="mt-10 input-text" type="password" placeholder="Password">
+            <input id="RegiConfirmPassword" class="mt-10 input-text" type="password" placeholder="Confirm Password">
+          </div>
+          <div class="center mt-20">
+            <input class="Submit-Btn" type="submit" value="Registration" id="RegistrationBtn">
+          </div>
+        </form>
+        <p class="center mt-20 already-have-account">Already have an account?
+          <a href="javascript:void(0);" onclick="ShowLoginForm();" >Login</a>
+        </p>
+      </div>
+      <div id="ForgetPasswordForm">
+        <form action="">
+          <div class="center mt-20">
+            <input class="input-text" type="email" id="forgetpassEmail" placeholder="Email Address">
+          </div>
+          <div class="center mt-20">
+            <input class="Submit-Btn" type="submit" value="Reset Password" id="PasswordResetBtn">
+          </div>
+        </form>
+        <p class="center mt-20 already-have-account">
+          Back to the
+          <a href="javascript:void(0);" onclick="ShowLoginForm();" >Login page</a> | 
+          <a href="javascript:void(0);" onclick="ShowRegistrationForm();"  >Registration page</a>
+        </p>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="javascript.js"></script>
+  
+</body>
+</html>

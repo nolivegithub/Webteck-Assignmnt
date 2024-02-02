@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Registration</title>
+</head>
+<body>
+
+  <div id="RegistrationForm">
+    <h1 id="formTitle">Registration</h1>
+    <form action="#">
+      <br> <br> <br>
+      <div class="center">
+        <input id="RegiName" class="input-text" type="text" placeholder="Full Name">
+        <input id="RegiEmailAddress" class="input-text mt-10" type="email" placeholder="Email Address">
+        <input id="RegiPassword" class="mt-10 input-text" type="password" placeholder="Password">
+        <input id="RegiConfirmPassword" class="mt-10 input-text" type="password" placeholder="Confirm Password">
+      </div>
+      <div class="center mt-20">
+        <input class="Submit-Btn" type="submit" value="Registration" id="RegistrationBtn">
+      </div>
+    </form>
+    <p class="center mt-20 already-have-account">Already have an account?
+      <a href="javascript:void(0);" onclick="ShowLoginForm();" >Login now</a>
+    </p>
+  </div>
+</body>
+</html>
